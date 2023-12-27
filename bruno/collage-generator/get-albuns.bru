@@ -1,0 +1,20 @@
+meta {
+  name: get-albuns
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/topalbuns
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "user": "guiba2",
+      "period": "1week",
+      "limit": 50,
+      "page": 1
+  }
+}
